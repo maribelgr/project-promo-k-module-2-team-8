@@ -1,0 +1,45 @@
+.main {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__link {
+    background-color: lightcoral;
+    width: 129px;
+    height: 42px;
+    display: block;
+    border-radius: 21px;
+    align-self: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}
+
+.steps {
+  padding-top: 18px;
+  background-color: burlywood;
+  width: 268px;
+  height: 74px;
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 39px 0;
+  padding: 15px 20px 10px 20px;
+  @media all and (min-width: 768px) {
+    width: 325px;
+    height: 86px;
+  }
+
+  &__article {
+  }
+
+  &__icon {
+  }
+
+  .far {
+    // width: 32px;
+    // height: 29px;
+  }
+}

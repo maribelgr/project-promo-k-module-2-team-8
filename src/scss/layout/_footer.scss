@@ -1,0 +1,21 @@
+.footer {
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0 20px 0;
+
+  &__copy {
+    margin-bottom: 12px;
+  }
+
+  &__logo {
+    width: 103px;
+    height: 40px;
+  }
+}
