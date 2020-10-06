@@ -3,15 +3,18 @@
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: white;
+  background-color: $colorPrimaryBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 18px 0 20px 0;
-
   &__copy {
     margin-bottom: 12px;
+    font-size: 14px;
+    font-family: $fontMain;
+    font-weight: normal;
+    color: rgba(107, 107, 107, 0.5);
   }
 
   &__logo {

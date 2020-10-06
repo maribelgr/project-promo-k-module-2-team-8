@@ -1,38 +1,68 @@
 .main {
+  height: 300px;
   padding-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $colorSecondaryBackground;
+
+  &__title {
+    font-size: 19.2px;
+    font-family: $fontLanding;
+    font-weight: 900;
+    color: $colorBrand01;
+  }
+
+  &__text {
+    margin: 0 28px;
+    font-size: 12.8px;
+    font-family: $fontMain;
+    font-weight: normal;
+    color: $colorBrand05;
+  }
+
+  .steps {
+    width: 268px;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0 39px 0;
+    padding: 15px 20px 18px 20px;
+    border-radius: 4px;
+    border: 1.6px solid rgba(225, 115, 52, 0.21);
+
+    @media all and (min-width: 768px) {
+      width: 325px;
+      height: 86px;
+    }
+
+    &__icon {
+      font-size: 22.4px;
+      color: $colorBrand01;
+    }
+
+    &__text {
+      font-size: 12.8px;
+      font-family: $fontMain;
+      font-weight: normal;
+      color: $colorBrand08;
+    }
+  }
 
   &__link {
-    background-color: lightcoral;
     width: 129px;
     height: 42px;
     display: block;
     border-radius: 21px;
+    background-color: $colorBrand04;
     align-self: center;
     padding: 10px 20px;
     text-transform: uppercase;
-  }
-}
-
-.steps {
-  padding-top: 18px;
-  background-color: burlywood;
-  width: 268px;
-  height: 74px;
-  display: flex;
-  // flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 18px 0 39px 0;
-  padding: 15px 20px 10px 20px;
-  @media all and (min-width: 768px) {
-    width: 325px;
-    height: 86px;
-  }
-
-  &__icon {
-    font-size: 22.4px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: $fontMain;
+    font-weight: 600;
+    color: $colorPrimaryBackground;
   }
 }
