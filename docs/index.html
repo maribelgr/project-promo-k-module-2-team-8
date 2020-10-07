@@ -4,44 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/9699a4c6bb.js"
       crossorigin="anonymous"
+      type="text/javascript"
     ></script>
   </head>
   <body>
-    <header>
-      <a href="#" title="">
-        <img src="../assets/images/logo-awesome-profile-cards.svg" alt=""
-      /></a>
-    </header>
-    <main>
-      <h1>Crea tu tarjeta de visita</h1>
-      <p>Crea mejores contactos profesionales de forma fácil y cómoda</p>
-      <section>
-        <article>
-          <i class="far fa-object-ungroup"></i>
-          <p>Diseña</p>
+    
+
+    <main class="main">
+      <img
+        src="../assets/images/logo-awesome-profile-cards.svg"
+        alt=""
+        class="main__image"
+      />
+      <h1 class="main__title">Crea tu tarjeta de visita</h1>
+      <p class="main__text">
+        Crea mejores contactos profesionales de forma fácil y cómoda
+      </p>
+      <section class="steps">
+        <article class="steps__article">
+          <i class="far fa-object-ungroup steps__icon"></i>
+          <p class="steps__text">Diseña</p>
         </article>
-        <article>
-          <i class="far fa-keyboard"></i>
-          <p>Rellena</p>
+        <article class="steps__article">
+          <i class="far fa-keyboard steps__icon"></i>
+          <p class="steps__text">Rellena</p>
         </article>
-        <article>
-          <i class="fas fa-share-alt"></i>
-          <p>Comparte</p>
+        <article class="steps__article">
+          <i class="fas fa-share-alt steps__icon"></i>
+          <p class="steps__text">Comparte</p>
         </article>
       </section>
-      <a href="#">Comenzar</a>
+      <a href="./cards.html" class="main__link" title="Ir a crear mi tarjeta"
+        >Comenzar</a
+      >
     </main>
-    <footer>
-      <small>Awesome profile-cards @2018</small>
+
+    <footer class="footer">
+      <small class="footer__copy">Awesome profile-cards @2018</small>
       <img
         src="../assets/images/logo-adalab.png"
         alt="Logo Adalab"
         title="Logo Adalab"
+        class="footer__logo"
       />
     </footer>
+
   </body>
 </html>
