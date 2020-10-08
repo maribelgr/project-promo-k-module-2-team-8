@@ -1,6 +1,5 @@
 @import "core/variables";
 @import "core/reset";
-@import "layout/header";
 @import "layout/main";
 @import "layout/cards-main";
 @import "layout/cards-photo";
@@ -8,11 +7,6 @@
 @import "layout/footer";
 
 body {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   text-align: center;
-  // height: 100vh;
-  background-color: aqua;
+  height: 100vh;
 }
