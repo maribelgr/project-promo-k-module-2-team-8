@@ -1,5 +1,46 @@
+.card-reset {
+  transform: translateX();
+  border: 1px solid red;
+
+  &__btn {
+    font-family: $fontMain;
+    width: 34px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $colorBrand08;
+    text-transform: uppercase;
+    padding: 6px 12px 6px 0;
+  }
+
+  // &__btn::before {
+  //   color: $colorBrand08;
+  // }
+}
+
+.fa-trash-alt {
+  color: $colorBrand08;
+  font-weight: normal;
+  font-size: 20px;
+  transform: scaleX(0.7);
+}
+
 .card-preview {
-  background-image: url();
+  height: 457px;
+  width: 100%;
+  background-image: url(../images/flowers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 240px;
+  height: 329px;
+  background-color: white;
 }
 
 .card__image {
