@@ -1,0 +1,26 @@
+.design__legend {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 41px 1fr 36px;
+  grid-template-rows: 1fr;
+}
+.design_icon {
+  grid-column: 1;
+  grid-row: 1;
+}
+.design__legend--title {
+  text-align: left;
+  grid-column: 2;
+  grid-row: 1;
+}
+.design_arrow {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: left;
+}
+.colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px 0 39px;
+}

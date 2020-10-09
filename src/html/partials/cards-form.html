@@ -1,62 +1,108 @@
 <section>
   <form action="" method="POST">
     <!-- DISEÑA -->
-    <fieldset>
-      <div>
-        <legend>
-          <i class="far fa-object-ungroup steps__icon"></i>Diseña<i class="fas fa-chevron-down"></i>
+    <fieldset class="design">
+      <div class="design__title">
+        <legend class="design__legend">
+          <i class="far fa-object-ungroup design__icon"></i>
+          <h2 class="design__legend--title">Diseña</h2>
+          <i class="fas fa-chevron-down design_arrow"></i>
         </legend>
       </div>
-      <div>
-        <h3>Colores</h3>
-      </div>
-      <div>
-        <label for="color-palette-1">
-          <input type="radio" id="color-palette-1" name="color" value="color-palette-1" />
-          <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-        </label>
-        <label for="color-palette-2">
-          <input type="radio" id="color-palette-2" name="color" value="color-palette-2" />
-          <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-        </label>
-        <label for="color-palette-3">
-          <input type="radio" id="color-palette-3" name="color" value="color-palette-3" />
-          <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </div>
-        </label>
+      <div class="colors">
+        <h3 class="colors__title">Colores</h3>
+        <div class="color__palets">
+          <label for="color-palette-1">
+            <input
+              class="input1"
+              type="radio"
+              id="color-palette-1"
+              name="color"
+              value="color-palette-1"
+            />
+            <div class="palette1">
+              <div class="palette1-1">1</div>
+              <div class="palette1-2">2</div>
+              <div class="palette1-3">3</div>
+            </div>
+          </label>
+          <label for="color-palette-2">
+            <input
+              class="input2"
+              type="radio"
+              id="color-palette-2"
+              name="color"
+              value="color-palette-2"
+            />
+            <div class="palette2">
+              <div class="palette2-1">1</div>
+              <div class="palette2-2">2</div>
+              <div class="palette2-3">3</div>
+            </div>
+          </label>
+          <label for="color-palette-3">
+            <input
+              class="input3"
+              type="radio"
+              id="color-palette-3"
+              name="color"
+              value="color-palette-3"
+            />
+            <div class="palette3">
+              <div class="palette3-1">1</div>
+              <div class="palette3-2">2</div>
+              <div class="palette3-3">3</div>
+            </div>
+          </label>
+        </div>
       </div>
     </fieldset>
     <!-- RELLENA -->
     <fieldset>
       <div>
         <legend>
-          <i class="far fa-keyboard steps__icon"></i>Rellena<i class="fas fa-chevron-down"></i>
+          <i class="far fa-keyboard steps__icon"></i>Rellena<i
+            class="fas fa-chevron-down"
+          ></i>
         </legend>
         <div>
           <label for="name">Nombre completo</label>
-          <input type="text" id="name" name="name" placeholder="Ej: Frida Kahlo" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ej: Frida Kahlo"
+            required
+          />
         </div>
         <div>
           <label for="job">Puesto</label>
-          <input type="text" id="job" name="job" placeholder="Ej: Pintora" required />
+          <input
+            type="text"
+            id="job"
+            name="job"
+            placeholder="Ej: Pintora"
+            required
+          />
         </div>
         <div class="action">
-          <button class="action__upload-btn js__profile-trigger" type="button">Get IMAGE!</button>
-          <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+          <button class="action__upload-btn js__profile-trigger" type="button">
+            Get IMAGE!
+          </button>
+          <input
+            type="file"
+            name=""
+            id="img-selector"
+            class="action__hiddenField js__profile-upload-btn"
+          />
         </div>
         <div class="profile">
-          <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+          <div
+            class="profile__image js__profile-image"
+            style="
+              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+            "
+          ></div>
           <div class="profile__preview js__profile-preview"></div>
         </div>
         <div>
@@ -71,7 +117,12 @@
         </div>
         <div>
           <label for="tel">Teléfono</label>
-          <input type="tel" id="tel" name="tel" placeholder="Ej: 666 66 66 66" />
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Ej: 666 66 66 66"
+          />
         </div>
         <div>
           <label for="linkedin">LinkedIn</label>
@@ -84,7 +135,12 @@
         </div>
         <div>
           <label for="github">Github</label>
-          <input type="text" id="github" name="github" placeholder="Ej: @frida-kalho" />
+          <input
+            type="text"
+            id="github"
+            name="github"
+            placeholder="Ej: @frida-kalho"
+          />
         </div>
       </div>
     </fieldset>
@@ -92,14 +148,19 @@
     <fieldset>
       <div>
         <legend>
-          <i class="fas fa-share-alt steps__icon"></i>Comparte<i class="fas fa-chevron-down"></i>
+          <i class="fas fa-share-alt steps__icon"></i>Comparte<i
+            class="fas fa-chevron-down"
+          ></i>
         </legend>
       </div>
-      <button type="button"><i class="far fa-address-card"></i>Crear tarjeta</button>
+      <button type="button">
+        <i class="far fa-address-card"></i>Crear tarjeta
+      </button>
       <div>
         <p>La tarjeta ha sido creada</p>
         <a href="" title="Link para compartir en twitter"
-          ><i class="fab fa-twitter" aria-hidden="true"></i>Compartir en twitter</a
+          ><i class="fab fa-twitter" aria-hidden="true"></i>Compartir en
+          twitter</a
         >
       </div>
     </fieldset>
