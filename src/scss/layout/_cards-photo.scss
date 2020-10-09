@@ -83,12 +83,26 @@
   align-items: center;
   padding: 12px 62px 12px 20px;
   height: 54px;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__icon-container {
+    width: 32px;
+    height: 32px;
+    border: 2px solid $colorBrand03;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icons {
+    font-size: 18px;
+    color: $colorBrand05;
+    font-weight: normal;
+    text-align: center;
+  }
 }
 
-.fas,
-.fab {
-  font-size: 18px;
-  color: $colorBrand05;
-  font-weight: normal;
-  text-align: center;
-}
