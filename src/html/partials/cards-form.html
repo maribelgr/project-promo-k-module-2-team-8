@@ -91,11 +91,11 @@
     <!-- COMPARTE -->
     <fieldset class="form-share">
       <div>
-        <legend>
-          <!-- cambiar estilo de iconos!!!!!!!! -->
-          <i class="fas fa-share-alt steps__icon"></i>
-          <h3>Comparte</h3>
-          <i class="fas fa-chevron-down"></i>
+        <legend class="share-legend">
+            <!-- cambiar estilo de iconos!!!!!!!! -->
+          <i class="fas fa-share-alt share-legend__icon--share"></i>
+          <h2 class="share-legend__title">Comparte</h3>
+          <i class="fas fa-chevron-down share-legend__icon--arrow"></i>
         </legend>
       </div>
       <div class="create-btn">
@@ -105,9 +105,10 @@
         </button>
       </div>
       <div class="success">
-        <p>La tarjeta ha sido creada</p>
-        <a href="" title="Link para compartir en twitter"
-          ><i class="fab fa-twitter" aria-hidden="true"></i>
+        <p class="success__text">La tarjeta ha sido creada:</p>
+        <a href="" class="success__link">https://awesome-profile-card.com?id=A456DF0001</a>
+        <a href="" title="Link para compartir en twitter" class="success__link--twitter"
+          ><i class="fab fa-twitter success__icon" aria-hidden="true"></i>
           Compartir en twitter
         </a>
       </div>

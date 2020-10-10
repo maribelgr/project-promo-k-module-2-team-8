@@ -1,16 +1,50 @@
 .form-share {
   font-family: $fontMain;
   font-size: 18px;
+  border: none;
   padding: 0 20px;
 }
 
+.share-legend {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 41px 1fr 20px;
+  grid-template-rows: 1fr;
+  padding: 10px 0 31px;
+
+  &__icon--share {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 18px;
+    color: $colorBrand01;
+  }
+
+  &__title {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+    font-family: $fontMain;
+    font-size: 18px;
+    font-weight: 600px;
+    color: $colorBrand08;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+
+  &__icon--arrow {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: left;
+    font-size: 18px;
+    color: $colorBrand08;
+  }
+}
 
 .create-btn {
   display: flex;
   justify-content: center;
   align-items: cen;
   border-bottom: 1px solid #d8d8d8;
-
 
   &__button {
     width: 199px;
@@ -28,10 +62,49 @@
     align-items: center;
     font-family: $fontMain;
     font-size: 18px;
-    margin: 30px 0;
+    margin-bottom: 30px;
   }
-  
-    &__icon {
-      font-size: 22px;
-    }
+
+  &__icon {
+    font-size: 22px;
+  }
+}
+
+.success {
+  padding: 20px 0 30px 0;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 30px;
+
+  &__text {
+    font-weight: 600;;
+    color: $colorBrand08;
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 12px;
+    font-weight: 600px;
+    color: $colorBrand01;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+  }
+
+  &__link--twitter {
+    width: 181px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: #00a0f5;
+    font-size: 14px;
+    color: $colorPrimaryBackground;
+    text-decoration: none;
+    padding: 6px 9px 7px 10.5px;
+  }
+
+  &__icon {
+    margin-right: 9.5px;
+    font-size: 18px;
+  }
 }
