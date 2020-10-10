@@ -1,26 +1,49 @@
-<section>
-  <button type="reset">
-    <i class="fas fa-trash-alt">Reset</i>
-    <div>
-      <h1>Nombre Apellido</h1>
-      <h2>Front-end developer</h2>
-      <img class="photo" src="./assets/images/Frida_Kalho.jpeg" alt="Fotografía de Frida Kahlo" title="Frida Kahlo" />
-      <ul>
-        <li>
-          <a href="#"> <i class="fas fa-mobile-alt"></i></a>
-        </li>
-        <li>
-          <a href="irenecorreas28@gmail.com">
-            <i class="fas fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com">
-            <i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com"> <i class="fab fa-github-alt"></i></a>
-        </li>
-      </ul>
+<section class="card-preview">
+  <div class="card-reset">
+    <button type="reset" class="card-reset__btn">
+      <i class="far fa-trash-alt"></i>
+      Reset</button>
+  </div>
+  <div class="card">
+    <div class="card-head">
+      <h1 class="card-head__title">Nombre Apellido</h1>
+      <h2 class="card-head__subtitle">Front-end developer</h2>
     </div>
-  </button>
+    <img
+      class="card__image"
+      src="./assets/images/Frida_Kalho.jpeg"
+      alt="Fotografía de Frida Kahlo"
+      title="Frida Kahlo"
+    />
+    <ul class="card-list">
+      <li class="card-list__item">
+        <a href="#" class="card-list__link">
+          <div class="card-list__icon-container">
+            <i class="fas fa-mobile-alt card-list__icons"></i>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="irenecorreas28@gmail.com" class="card-list__link">
+          <div class="card-list__icon-container">
+            <i class="fas fa-envelope card-list__icons"></i>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com" class="card-list__link">
+          <div class="card-list__icon-container">
+            <i class="fab fa-linkedin-in card-list__icons"></i>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com" class="card-list__link">
+          <div class="card-list__icon-container">
+            <i class="fab fa-github-alt card-list__icons"></i>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
