@@ -1,10 +1,12 @@
 <section>
   <form action="" method="POST">
     <!-- DISEÑA -->
-    <fieldset>
+  
       <div>
         <legend>
-          <i class="far fa-object-ungroup steps__icon"></i>Diseña<i class="fas fa-chevron-down"></i>
+          <i class="far fa-object-ungroup steps__icon"></i>Diseña<i
+            class="fas fa-chevron-down"
+          ></i>
         </legend>
       </div>
       <div>
@@ -12,7 +14,12 @@
       </div>
       <div>
         <label for="color-palette-1">
-          <input type="radio" id="color-palette-1" name="color" value="color-palette-1" />
+          <input
+            type="radio"
+            id="color-palette-1"
+            name="color"
+            value="color-palette-1"
+          />
           <div>
             <div>1</div>
             <div>2</div>
@@ -20,7 +27,12 @@
           </div>
         </label>
         <label for="color-palette-2">
-          <input type="radio" id="color-palette-2" name="color" value="color-palette-2" />
+          <input
+            type="radio"
+            id="color-palette-2"
+            name="color"
+            value="color-palette-2"
+          />
           <div>
             <div>1</div>
             <div>2</div>
@@ -28,7 +40,12 @@
           </div>
         </label>
         <label for="color-palette-3">
-          <input type="radio" id="color-palette-3" name="color" value="color-palette-3" />
+          <input
+            type="radio"
+            id="color-palette-3"
+            name="color"
+            value="color-palette-3"
+          />
           <div>
             <div>1</div>
             <div>2</div>
@@ -39,29 +56,58 @@
     </fieldset>
     <!-- RELLENA -->
     <fieldset>
-      <div>
-        <legend>
-          <i class="far fa-keyboard steps__icon"></i>Rellena<i class="fas fa-chevron-down"></i>
+      <div class="fill">
+        <!-- titulo rellena -->
+        <legend class="fill__container">
+          <i class="far fa-keyboard"></i>
+          <h3 class="fill__title">Rellena</h3>
+          <i class="fas fa-chevron-down"></i>
         </legend>
-        <div>
+        <!-- Fin titulo rellena -->
+        <div class="fill__name form">
           <label for="name">Nombre completo</label>
-          <input type="text" id="name" name="name" placeholder="Ej: Frida Kahlo" required />
+          <input class="form__inp"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ej: Frida Kahlo"
+            required
+          />
         </div>
-        <div>
+        <div class="fill__job form">
           <label for="job">Puesto</label>
-          <input type="text" id="job" name="job" placeholder="Ej: Pintora" required />
+          <input class="form__inp"
+            type="text"
+            id="job"
+            name="job"
+            placeholder="Ej: Pintora"
+            required
+          />
         </div>
-        <div class="action">
-          <button class="action__upload-btn js__profile-trigger" type="button">Get IMAGE!</button>
-          <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+        <div class="fill__action form">
+          <label for="img">Imagen de perfil</label>
+          <button class="action__upload-btn js__profile-trigger" type="button">
+            Añadir imagen
+          </button>
+          <input
+            type="file"
+            name=""
+            id="img-selector"
+            class="action__hiddenField js__profile-upload-btn"
+          />
         </div>
-        <div class="profile">
-          <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+        <div class="fill__profile form">
+          <div
+            class="profile__image js__profile-image"
+            style="
+              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+            "
+          ></div>
           <div class="profile__preview js__profile-preview"></div>
         </div>
-        <div>
+        <div class="fill_email form">
           <label for="email">Email</label>
-          <input
+          <input class="form__inp"
             type="email"
             id="email"
             name="email"
@@ -69,37 +115,52 @@
             required
           />
         </div>
-        <div>
+        <div class="fill_phone form">
           <label for="tel">Teléfono</label>
-          <input type="tel" id="tel" name="tel" placeholder="Ej: 666 66 66 66" />
+          <input class="form__inp"
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="Ej: 666 66 66 66"
+          />
         </div>
-        <div>
+        <div class="fill__linkedin form">
           <label for="linkedin">LinkedIn</label>
-          <input
+          <input class="form__inp"
             type="text"
             id="linkedin"
             name="linkedin"
             placeholder="Ej: linkedin.com/in/frida-kalho"
           />
         </div>
-        <div>
+        <div class="fill__github form">
           <label for="github">Github</label>
-          <input type="text" id="github" name="github" placeholder="Ej: @frida-kalho" />
+          <input class="form__inp"
+            type="text"
+            id="github"
+            name="github"
+            placeholder="Ej: @frida-kalho"
+          />
         </div>
       </div>
-    </fieldset>
+   
     <!-- COMPARTE -->
     <fieldset>
       <div>
         <legend>
-          <i class="fas fa-share-alt steps__icon"></i>Comparte<i class="fas fa-chevron-down"></i>
+          <i class="fas fa-share-alt steps__icon"></i>Comparte<i
+            class="fas fa-chevron-down"
+          ></i>
         </legend>
       </div>
-      <button type="button"><i class="far fa-address-card"></i>Crear tarjeta</button>
+      <button type="button">
+        <i class="far fa-address-card"></i>Crear tarjeta
+      </button>
       <div>
         <p>La tarjeta ha sido creada</p>
         <a href="" title="Link para compartir en twitter"
-          ><i class="fab fa-twitter" aria-hidden="true"></i>Compartir en twitter</a
+          ><i class="fab fa-twitter" aria-hidden="true"></i>Compartir en
+          twitter</a
         >
       </div>
     </fieldset>
