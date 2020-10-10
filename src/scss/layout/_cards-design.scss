@@ -1,0 +1,132 @@
+.design {
+  border: none;
+  // border-bottom: 1px #d8d8d8;
+}
+
+.design__legend {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 41px 1fr 36px;
+  grid-template-rows: 1fr;
+  margin: 27px 0 31px;
+}
+.design__icon {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 18px;
+  color: $colorBrand01;
+  padding-left: 20px;
+}
+.design__legend--title {
+  text-align: left;
+  grid-column: 2;
+  grid-row: 1;
+  font-family: $fontMain;
+  font-size: 18px;
+  font-weight: 600px;
+  color: $colorBrand08;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.design__arrow {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: left;
+  font-size: 18px;
+  color: $colorBrand08;
+}
+.colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px 0 39px;
+}
+.colors__title {
+  font-family: $fontMain;
+  font-size: 14px;
+  color: $colorBrand08;
+  text-transform: uppercase;
+  margin-top: -9px;
+}
+
+.color-palette-1,
+.color-palette-2,
+.color-palette-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+// Paleta de color 1
+.color-palette-1 {
+  margin-bottom: 20px;
+}
+.input1 {
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  border-bottom-color: red;
+}
+.palette1-1 {
+  width: 30px;
+  height: 25px;
+  background-color: $colorBrand05;
+}
+.palette1-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $colorBrand04;
+}
+.palette1-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $colorBrand03;
+}
+// Paleta de color 2
+.color-palette-2 {
+  margin-bottom: 20px;
+}
+.input2 {
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+}
+.palette2-1 {
+  width: 30px;
+  height: 25px;
+  background-color: #420101;
+}
+.palette2-2 {
+  width: 30px;
+  height: 25px;
+  background-color: #bd1010;
+}
+
+.palette2-3 {
+  width: 30px;
+  height: 25px;
+  background-color: #e95626;
+}
+// Paleta de color 3
+.color-palette-3 {
+  margin-bottom: 30px;
+}
+.input3 {
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+}
+.palette3-1 {
+  width: 30px;
+  height: 25px;
+  background-color: #3e5b65;
+}
+.palette3-2 {
+  width: 30px;
+  height: 25px;
+  background-color: #eab052;
+}
+.palette3-3 {
+  width: 30px;
+  height: 25px;
+  background-color: #a0c0cf;
+}
