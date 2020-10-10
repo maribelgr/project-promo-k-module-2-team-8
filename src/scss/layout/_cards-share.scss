@@ -1,0 +1,37 @@
+.form-share {
+  font-family: $fontMain;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+
+.create-btn {
+  display: flex;
+  justify-content: center;
+  align-items: cen;
+  border-bottom: 1px solid #d8d8d8;
+
+
+  &__button {
+    width: 199px;
+    height: 50px;
+    background-color: #d5d5d5;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    border: none;
+    color: $colorPrimaryBackground;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 13px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fontMain;
+    font-size: 18px;
+    margin: 30px 0;
+  }
+  
+    &__icon {
+      font-size: 22px;
+    }
+}

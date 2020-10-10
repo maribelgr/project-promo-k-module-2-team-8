@@ -89,18 +89,27 @@
       </div>
     </fieldset>
     <!-- COMPARTE -->
-    <fieldset>
+    <fieldset class="form-share">
       <div>
         <legend>
-          <i class="fas fa-share-alt steps__icon"></i>Comparte<i class="fas fa-chevron-down"></i>
+          <!-- cambiar estilo de iconos!!!!!!!! -->
+          <i class="fas fa-share-alt steps__icon"></i>
+          <h3>Comparte</h3>
+          <i class="fas fa-chevron-down"></i>
         </legend>
       </div>
-      <button type="button"><i class="far fa-address-card"></i>Crear tarjeta</button>
-      <div>
+      <div class="create-btn">
+        <button type="button" class="create-btn__button">
+          <i class="far fa-address-card create-btn__icon"></i>
+          Crear tarjeta
+        </button>
+      </div>
+      <div class="success">
         <p>La tarjeta ha sido creada</p>
         <a href="" title="Link para compartir en twitter"
-          ><i class="fab fa-twitter" aria-hidden="true"></i>Compartir en twitter</a
-        >
+          ><i class="fab fa-twitter" aria-hidden="true"></i>
+          Compartir en twitter
+        </a>
       </div>
     </fieldset>
   </form>
