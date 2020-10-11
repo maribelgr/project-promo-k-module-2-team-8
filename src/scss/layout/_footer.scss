@@ -1,7 +1,6 @@
 .footer {
   height: 19.37vh;
   width: 100%;
-  position: fixed;
   bottom: 0;
   background-color: $colorPrimaryBackground;
   display: flex;
@@ -10,7 +9,7 @@
   align-items: center;
   padding: 18px 0 20px 0;
   @media all and (min-width: 768px) {
-    height: 60px;
+    height: 5.87vh;
     flex-direction: row;
     justify-content: space-between;
   }

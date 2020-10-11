@@ -5,24 +5,24 @@
   align-items: center;
   background-color: $colorSecondaryBackground;
   @media all and (min-width: 768px) {
-    height: 963px;
+    height: 94.13vh;
   }
 
   &__logo {
-    padding-top: 16.73vh;
+    padding-top: 95px;
     padding-bottom: 35px;
     @media all and (min-width: 768px) {
-      padding-top: 34.21vh;
+      padding-top: 350px;
       padding-bottom: 31px;
     }
   }
 
   &__image {
-    // width: 250px;
-    height: 125px;
+    width: auto;
+    height: 63px;
     @media all and (min-width: 768px) {
-      // width: 419px;
-      height: 130px;
+      height: 105px;
+      width: auto;
     }
   }
 
