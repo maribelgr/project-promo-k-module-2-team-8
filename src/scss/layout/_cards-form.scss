@@ -1,23 +1,45 @@
-.fill {
+.form-container {
   background-image: linear-gradient(
     to bottom,
     $colorSecondaryBackground,
     $colorPrimaryBackground 9%
   );
+}
+
+.fill {
   padding: 10px 19px 30px 20px;
 
   &__container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 41px 1fr 20px;
+    grid-template-rows: 1fr;
+    padding: 10px 0 31px;
   }
 
-  .fa-keyboard {
+  &__icon {
     color: $colorBrand01;
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 18px;
   }
   &__title {
     font-family: $fontMain;
     text-transform: uppercase;
     font-size: 18px;
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: 600px;
+    color: $colorBrand08;
+    padding-left: 10px;
+  }
+  &__arrow {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: left;
+    font-size: 18px;
+    color: $colorBrand08;
   }
   .form {
     display: flex;
@@ -52,6 +74,7 @@
   }
   .action__upload-btn {
     background: $colorBrand01;
+    border: none;
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     color: $colorPrimaryBackground;
