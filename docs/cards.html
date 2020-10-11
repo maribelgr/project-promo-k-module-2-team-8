@@ -25,7 +25,7 @@
       <img src="./assets/images/logofridakards.png" alt="" / class="cards-header__logo">
     </header>
 
-    <main>
+    <main class="cards-main">
       <section class="card-preview">
         <div class="card-reset">
           <button type="reset" class="card-reset__btn">
@@ -39,7 +39,7 @@
           </div>
           <img
             class="card__image"
-            src="./assets/images/Frida_Kalho.jpeg"
+            src="./assets/images/Frida480x400.png"
             alt="Fotografía de Frida Kahlo"
             title="Frida Kahlo"
           />
@@ -76,7 +76,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="cards-form">
         <form class="form-container" action="" method="POST">
           <!-- DISEÑA -->
           <fieldset class="design">
@@ -162,26 +162,28 @@
                   required
                 />
               </div>
-              <div class="fill__action form">
-                <label for="img">Imagen de perfil</label>
-                <button class="action__upload-btn js__profile-trigger" type="button">
-                  Añadir imagen
-                </button>
-                <input
-                  type="file"
-                  name=""
-                  id="img-selector"
-                  class="action__hiddenField js__profile-upload-btn"
-                />
-              </div>
-              <div class="fill__profile form">
-                <div
-                  class="js__profile-image"
-                  style="
-                    background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-                  "
-                ></div>
-                <div class="profile__preview js__profile-preview"></div>
+              <div class="fill-container-image">
+                <div class="fill__action form">
+                  <label for="img">Imagen de perfil</label>
+                  <button class="action__upload-btn js__profile-trigger" type="button">
+                    Añadir imagen
+                  </button>
+                  <input
+                    type="file"
+                    name=""
+                    id="img-selector"
+                    class="action__hiddenField js__profile-upload-btn"
+                  />
+                </div>
+                <div class="fill__profile form">
+                  <div
+                    class="js__profile-image"
+                    style="
+                      background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+                    "
+                  ></div>
+                  <div class="profile__preview js__profile-preview"></div>
+                </div>
               </div>
               <div class="fill_email form">
                 <label for="email">Email</label>
