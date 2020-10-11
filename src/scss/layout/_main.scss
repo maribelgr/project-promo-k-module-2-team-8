@@ -2,6 +2,7 @@
   height: 80.63vh;
   display: flex;
   flex-direction: column;
+  // justify-content: center;
   align-items: center;
   background-color: $colorSecondaryBackground;
   @media all and (min-width: 768px) {
@@ -9,19 +10,19 @@
   }
 
   &__logo {
-    padding-top: 95px;
-    padding-bottom: 35px;
+    padding-top: 13.25vh;
+    padding-bottom: 4.23vh;
     @media all and (min-width: 768px) {
-      padding-top: 350px;
-      padding-bottom: 31px;
+      padding-top: 21.96vh;
+      padding-bottom: 3.22vh;
     }
   }
 
   &__image {
     width: auto;
-    height: 63px;
+    height: 95px;
     @media all and (min-width: 768px) {
-      height: 105px;
+      height: 190px;
       width: auto;
     }
   }
@@ -53,14 +54,14 @@
     height: 74px;
     display: flex;
     justify-content: space-between;
-    margin: 18px 0 39px 0;
+    margin: 3.89vh 0 6.5vh 0;
     padding: 15px 20px 18px 20px;
     border-radius: 4px;
     border: 1.6px solid rgba(225, 115, 52, 0.21);
     @media all and (min-width: 768px) {
       width: 325px;
       height: 86px;
-      margin: 27px 0 186px 0;
+      margin: 2.80vh 0 16.31vh 0;
       padding: 15px 20px 10px 20px;
       border-radius: 5px;
       border: 2px solid rgba(225, 115, 52, 0.21);
@@ -107,5 +108,10 @@
     font-family: $fontMain;
     font-weight: 600;
     color: $colorPrimaryBackground;
+    margin-bottom: 6.55vh;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 6.13vh;
+    }
   }
 }

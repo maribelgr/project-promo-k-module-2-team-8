@@ -40,6 +40,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 20px 0 39px;
+
+  @media all and (min-width: 768px) {
+    margin-left: 20px;
+  }
 }
 .colors__title {
   font-family: $fontMain;
@@ -54,7 +58,7 @@
 .color-palette-3 {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
 }
 // Paleta de color 1
 .color-palette-1 {

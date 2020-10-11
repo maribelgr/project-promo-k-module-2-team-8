@@ -3,26 +3,26 @@
     grid-column: 1 / 2;
     grid-row: 1 / 1;
     height: 80vh;
+    
+  @media all and (min-width: 768px) {
+    margin-right: 10px;
+  }
   }
 }
 
-.form-container {
-  background-image: linear-gradient(
-    to bottom,
-    $colorSecondaryBackground,
-    $colorPrimaryBackground 9%
-  );
-}
+// .form-container {
+  
+// }
 
 .fill {
-  padding: 10px 20px 30px 20px;
+  padding: 10px 20px 0 20px;
 
   &__container {
     display: grid;
     align-items: center;
     grid-template-columns: 18px 1fr 20px;
     grid-template-rows: 1fr;
-    padding: 10px 0 31px;
+    padding: 10px 0 0;
   }
 
   &__icon {
@@ -46,7 +46,7 @@
   &__arrow {
     grid-column: 3;
     grid-row: 1;
-    text-align: left;
+    text-align: right;
     font-size: 18px;
     color: $colorBrand08;
   }
@@ -55,8 +55,8 @@
     flex-direction: column;
     text-align: left;
     height: 55px;
-    justify-content: space-around;
-    margin: 10px 0 10px 0;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
     font-family: $fontMain;
     font-size: 14px;
     color: $colorBrand05;
@@ -81,12 +81,12 @@
   .fill-container-image {
     display: flex;
     flex-direction: row;
+    margin: -20px 0;
   }
 
   &__action {
     text-align: center;
-    margin: 30px;
-
+    margin: 30px; 
   }
   .action__upload-btn {
     background: $colorBrand01;
@@ -109,7 +109,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    transform: translateY(5px);
   }
   .profile__image,
   .profile__preview {

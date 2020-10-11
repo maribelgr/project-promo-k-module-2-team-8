@@ -10,14 +10,18 @@
     font-size: 12px;
     line-height: 1.67;
     color: $colorBrand08;
+    // color: $colorBrand05;
     text-transform: uppercase;
     padding: 6px 12px 6px 0;
-    background-color: #bfcdd0;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
     margin-bottom: 20px;
+    @media all and (min-width: 768px) {
+      transform: translateY(-80px);
+    }
   }
 }
 
@@ -30,13 +34,15 @@
 .card-preview {
   height: 457px;
   width: 100%;
-  background-image: url(../images/flowers.jpg);
+  background-image: url(../images/flores-verdes.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 6px;
+  margin-top: 20px;
 
   @media all and (min-width: 768px) {
     grid-column: 2 / 3;
@@ -47,8 +53,12 @@
 .card {
   width: 240px;
   height: 329px;
+  display: block;
   background-color: white;
   font-family: $fontUser;
+  @media all and (min-width: 768px) {
+    transform: translateY(-80px);
+  }
 }
 
 .card-head {
@@ -77,6 +87,8 @@
   width: 240px;
   height: 200px;
   display: block;
+  // border-top: 2px solid $colorBrand05;
+  // border-bottom: 2px solid $colorBrand05;
 }
 
 .card-list {
