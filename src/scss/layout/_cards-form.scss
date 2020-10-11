@@ -1,3 +1,11 @@
+.cards-form {
+  @media all and (min-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    height: 80vh;
+  }
+}
+
 .form-container {
   background-image: linear-gradient(
     to bottom,
@@ -70,9 +78,15 @@
   }
 
   // INPUT IMAGE
+  .fill-container-image {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__action {
     text-align: center;
     margin: 30px;
+
   }
   .action__upload-btn {
     background: $colorBrand01;
@@ -95,6 +109,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    transform: translateY(5px);
   }
   .profile__image,
   .profile__preview {
@@ -109,9 +124,9 @@
   // }
 
   .profile__preview {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
   }
   &__linkedin {
   }

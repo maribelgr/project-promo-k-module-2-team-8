@@ -37,6 +37,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media all and (min-width: 768px) {
+    grid-column: 2 / 3;
+    height: 100vh;
+  }
 }
 
 .card {
