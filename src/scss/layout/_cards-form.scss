@@ -1,45 +1,95 @@
-// INPUT IMAGE
-.action {
-  text-align: center;
-  margin: 30px;
-}
-.action__upload-btn {
-  background: deeppink;
-  border-radius: 15px;
-  border: 0;
-  box-shadow: 0 0 5px rgba(#000, 0.3);
-  box-sizing: border-box;
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 20px;
-  padding: 10px 20px;
-  width: 250px;
-}
-.action__hiddenField {
-  /* Ocultamos el input de tipo "file" porque no podemos 
+.fill {
+  background-image: linear-gradient(
+    to bottom,
+    $colorSecondaryBackground,
+    $colorPrimaryBackground 9%
+  );
+  padding: 10px 19px 30px 20px;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .fa-keyboard {
+    color: $colorBrand01;
+  }
+  &__title {
+    font-family: $fontMain;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 55px;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    font-family: $fontMain;
+    font-size: 14px;
+    color: $colorBrand05;
+
+    &__inp {
+      height: 30px;
+      border: solid 1px $colorBrand03;
+      color: $colorBrand09;
+    }
+    &__inp::placeholder {
+      color: $colorBrand09;
+    }
+  }
+
+  &__name {
+  }
+  &__job {
+  }
+
+  // INPUT IMAGE
+  &__action {
+    text-align: center;
+    margin: 30px;
+  }
+  .action__upload-btn {
+    background: $colorBrand01;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    color: $colorPrimaryBackground;
+    font-family: $fontMain;
+    font-size: 14px;
+    width: 140px;
+    height: 30px;
+  }
+  .action__hiddenField {
+    /* Ocultamos el input de tipo "file" porque no podemos 
   darle los estilos que queremos */
-  display: none;
-}
+    display: none;
+  }
 
-.profile {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.profile__image,
-.profile__preview {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid #ccc;
-}
-.profile__image {
-  width: 300px;
-  height: 300px;
-}
+  &__profile {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .profile__image,
+  .profile__preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+  }
+  // .profile__image {
+  //   width: 300px;
+  //   height: 300px;
+  // }
 
-.profile__preview {
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
+  .profile__preview {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+  &__linkedin {
+  }
+  &__github {
+  }
 }
