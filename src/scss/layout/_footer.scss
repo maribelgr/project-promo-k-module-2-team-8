@@ -14,21 +14,25 @@
     justify-content: space-between;
   }
   &__copy {
-    margin-bottom: 12px;
     font-size: 14px;
     font-family: $fontMain;
     font-weight: normal;
     color: rgba(107, 107, 107, 0.5);
     @media all and (min-width: 768px) {
-      margin-left: 41px;
+      // margin-left: 41px;
     }
   }
 
   &__logo {
     width: 103px;
     height: 40px;
+    margin-top: 18px;
     @media all and (min-width: 768px) {
       margin-right: 40px;
     }
   }
+}
+.copy2020 {
+  padding-top: 18px;
+  margin-left: 41px;
 }
