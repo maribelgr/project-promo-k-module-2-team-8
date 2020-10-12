@@ -42,12 +42,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  margin-top: 20px;
 
   @media all and (min-width: 768px) {
     grid-column: 2 / 3;
     // height: 100vh;
     height: 100%;
+    margin-top: 20px;
   }
 }
 
