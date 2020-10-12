@@ -61,7 +61,7 @@
     @media all and (min-width: 768px) {
       width: 325px;
       height: 86px;
-      margin: 2.80vh 0 16.31vh 0;
+      margin: 2.8vh 0 16.31vh 0;
       padding: 15px 20px 10px 20px;
       border-radius: 5px;
       border: 2px solid rgba(225, 115, 52, 0.21);
@@ -109,6 +109,10 @@
     font-weight: 600;
     color: $colorPrimaryBackground;
     margin-bottom: 6.55vh;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $colorBrand01;
+    }
 
     @media all and (min-width: 768px) {
       margin-bottom: 6.13vh;

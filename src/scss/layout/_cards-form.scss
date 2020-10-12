@@ -3,15 +3,15 @@
     grid-column: 1 / 2;
     grid-row: 1 / 1;
     height: 80vh;
-    
-  @media all and (min-width: 768px) {
-    margin-right: 10px;
-  }
+
+    @media all and (min-width: 768px) {
+      margin-right: 10px;
+    }
   }
 }
 
 // .form-container {
-  
+
 // }
 
 .fill {
@@ -72,11 +72,6 @@
     }
   }
 
-  &__name {
-  }
-  &__job {
-  }
-
   // INPUT IMAGE
   .fill-container-image {
     display: flex;
@@ -86,7 +81,7 @@
 
   &__action {
     text-align: center;
-    margin: 30px; 
+    margin: 30px;
   }
   .action__upload-btn {
     background: $colorBrand01;
@@ -126,9 +121,5 @@
     width: 30px;
     height: 30px;
     margin-left: 20px;
-  }
-  &__linkedin {
-  }
-  &__github {
   }
 }
