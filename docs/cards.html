@@ -21,18 +21,24 @@
     ></script>
   </head>
   <body>
-    <header class="cards-header">
-      <a href="../index.html" title="Ir a la página de inicio">
-        <img src="./assets/images/logofridakards.png" alt="Logo de Frida Kards" / class="cards-header__logo">
+    <header class="cards-header" role="banner">
+      <a
+        href="../index.html"
+        title="Ir a la página de inicio"
+        aria-label="Ir a la página de inicio"
+      >
+        <img src="./assets/images/logoversion2.png" alt="Logo de Frida Kards" /
+        class="cards-header__logo" aria-label="Logotipo de Frida Kards">
       </a>
     </header>
 
-    <main class="cards-main">
+    <main class="cards-main" role="main">
       <section class="card-preview">
         <div class="card-reset">
-          <button type="reset" class="card-reset__btn">
+          <button type="reset" class="card-reset__btn" aria-label="Reset">
             <i class="far fa-trash-alt"></i>
-            Reset</button>
+            Reset
+          </button>
         </div>
         <div class="card">
           <div class="card-head">
@@ -44,31 +50,46 @@
             src="./assets/images/Frida480x400.png"
             alt="Fotografía de Frida Kahlo"
             title="Frida Kahlo"
+            aria-label="Imagen de Frida Kahlo"
           />
           <ul class="card-list">
             <li class="card-list__item">
-              <a href="#" class="card-list__link">
+              <a href="#" class="card-list__link" aria-label="Teléfono">
                 <div class="card-list__icon-container">
                   <i class="fas fa-mobile-alt card-list__icons"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="irenecorreas28@gmail.com" class="card-list__link">
+              <a
+                href="mailto: irenecorreas28@gmail.com"
+                class="card-list__link"
+                aria-label="Email"
+              >
                 <div class="card-list__icon-container">
                   <i class="fas fa-envelope card-list__icons"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com" class="card-list__link">
+              <a
+                href="https://www.linkedin.com"
+                class="card-list__link"
+                target="_blank"
+                aria-label="Linkedin"
+              >
                 <div class="card-list__icon-container">
                   <i class="fab fa-linkedin-in card-list__icons"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://github.com" class="card-list__link">
+              <a
+                href="https://github.com"
+                class="card-list__link"
+                target="_blank"
+                aria-label="Github"
+              >
                 <div class="card-list__icon-container">
                   <i class="fab fa-github-alt card-list__icons"></i>
                 </div>
@@ -79,14 +100,14 @@
       </section>
 
       <section class="cards-form">
-        <form class="form-container" action="" method="POST">
+        <form class="form-container" action="" method="POST" role="form">
           <!-- DISEÑA -->
           <fieldset class="design">
             <div class="design__title">
               <legend class="design__legend">
                 <i class="far fa-object-ungroup design__icon"></i>
                 <h2 class="design__legend--title">Diseña</h2>
-                <i class="fas fa-chevron-down design__arrow"></i>
+                <i class="fas fa-chevron-down design__arrow" aria-label="Desplegar"></i>
               </legend>
             </div>
             <div class="colors">
@@ -141,7 +162,7 @@
               <legend class="fill__container">
                 <i class=" fill__icon far fa-keyboard"></i>
                 <h3 class="fill__title">Rellena</h3>
-                <i class=" fill__arrow fas fa-chevron-down"></i>
+                <i class=" fill__arrow fas fa-chevron-down" aria-label="Desplegar"></i>
               </legend>
               <!-- Fin titulo rellena -->
               <div class="fill__name form">
@@ -203,7 +224,7 @@
                   type="tel"
                   id="tel"
                   name="tel"
-                  placeholder="Ej: 666 66 66 66"
+                  placeholder="Ej: 698 55 43 95"
                 />
               </div>
               <div class="fill__linkedin form">
@@ -233,7 +254,7 @@
                   <!-- cambiar estilo de iconos!!!!!!!! -->
                 <i class="fas fa-share-alt share-legend__icon--share"></i>
                 <h2 class="share-legend__title">Comparte</h3>
-                <i class="fas fa-chevron-down share-legend__icon--arrow"></i>
+                <i class="fas fa-chevron-down share-legend__icon--arrow" aria-label="Desplegar"></i>
               </legend>
             </div>
             <div class="create-btn">
@@ -246,7 +267,7 @@
               <p class="success__text">La tarjeta ha sido creada:</p>
               <a href="" class="success__link">https://awesome-profile-card.com?id=A456DF0001</a>
               <a href="" title="Link para compartir en twitter" class="success__link--twitter"
-                ><i class="fab fa-twitter success__icon" aria-hidden="true"></i>
+                ><i class="fab fa-twitter success__icon" aria-hidden="true" aria-label="Compartir en Twitter"></i>
                 Compartir en twitter
               </a>
             </div>
@@ -255,14 +276,29 @@
       </section>
 
     </main>
-    <footer class="footer">
-      <small class="footer__copy">Awesome profile-cards @2018</small>
-      <img
-        src="./assets/images/logo-adalab.png"
-        alt="Logo Adalab"
-        title="Logo Adalab"
-        class="footer__logo"
-      />
+
+    <footer class="footer" role="contentinfo">
+      <div class="copy2020">
+        <img
+          src="./assets/images/logofooter.png"
+          class="footer_logofrida"
+          alt="Logo Frida Kards"
+        />
+        <small class="footer__copy"> @2020</small>
+      </div>
+      <a
+        href="https://adalab.es/"
+        title="Ir a la web de Adalab"
+        aria-label="Ir a la web de Adalab"
+      >
+        <img
+          src="./assets/images/logo-adalab.png"
+          alt="Logo Adalab"
+          title="Logotipo de Adalab"
+          class="footer__logo"
+          aria-label="Logotipo de Adalab"
+        />
+      </a>
     </footer>
 
     <script src="./assets/js/get-avatar.js"></script>
