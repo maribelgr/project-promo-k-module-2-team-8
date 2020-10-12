@@ -46,7 +46,8 @@
 
   @media all and (min-width: 768px) {
     grid-column: 2 / 3;
-    height: 100vh;
+    // height: 100vh;
+    height: 100%;
   }
 }
 
@@ -73,7 +74,7 @@
     line-height: 1.11;
     color: $colorBrand05;
   }
-  
+
   &__subtitle {
     font-size: 16px;
     font-weight: normal;
@@ -122,4 +123,3 @@
     text-align: center;
   }
 }
-

@@ -6,14 +6,16 @@
   align-items: center;
   background-color: $colorSecondaryBackground;
   @media all and (min-width: 768px) {
-    height: 94.13vh;
+    // height: 94.13vh;
+    height: 92.13vh;
   }
 
   &__logo {
     padding-top: 13.25vh;
     padding-bottom: 4.23vh;
     @media all and (min-width: 768px) {
-      padding-top: 21.96vh;
+      // padding-top: 21.96vh;
+      padding-top: 12.96;
       padding-bottom: 3.22vh;
     }
   }
