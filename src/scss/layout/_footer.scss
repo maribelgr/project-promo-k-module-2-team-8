@@ -1,18 +1,25 @@
 .footer {
-  height: 19.37vh;
+  height: 110px;
   width: 100%;
   background-color: $colorPrimaryBackground;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 18px 0 20px 0;
+  padding: 18px 0 14px 0;
   border-top: 1px solid #d8d8d8;
   @media all and (min-width: 768px) {
-    height: 5.87vh;
+    height: 60px;
+    padding: 5px 0 15px 0;
     flex-direction: row;
     justify-content: space-between;
   }
+  &__copy2020 {
+    @media all and (min-width: 768px) {
+      margin-left: 41px;
+    }
+  }
+
   &__logofrida {
     height: 30px;
     width: auto;
@@ -22,21 +29,15 @@
     font-family: $fontMain;
     font-weight: normal;
     color: rgba(107, 107, 107, 0.5);
-    @media all and (min-width: 768px) {
-      // margin-left: 41px;
-    }
   }
 
   &__logo {
     width: 103px;
     height: 40px;
-    margin-top: 18px;
+    margin-top: 12px;
     @media all and (min-width: 768px) {
       margin-right: 40px;
+      padding-bottom: px;
     }
   }
-}
-.copy2020 {
-  padding-top: 18px;
-  margin-left: 41px;
 }

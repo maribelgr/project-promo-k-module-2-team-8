@@ -1,22 +1,14 @@
 .main {
-  height: 80.63vh;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  justify-content: center;
   align-items: center;
   background-color: $colorSecondaryBackground;
-  @media all and (min-width: 768px) {
-    // height: 94.13vh;
-    height: 92.13vh;
-  }
 
   &__logo {
-    padding-top: 13.25vh;
-    padding-bottom: 4.23vh;
+    padding-bottom: 20px;
     @media all and (min-width: 768px) {
-      // padding-top: 21.96vh;
-      padding-top: 12.96;
-      padding-bottom: 3.22vh;
+      padding-bottom: 18px;
     }
   }
 
@@ -40,6 +32,7 @@
   }
 
   &__text {
+    text-align: center;
     margin: 0 28px;
     font-size: 12.8px;
     font-family: $fontMain;
@@ -50,27 +43,30 @@
       font-size: 16px;
     }
   }
-
   .steps {
     width: 268px;
     height: 74px;
     display: flex;
     justify-content: space-between;
-    margin: 3.89vh 0 6.5vh 0;
+    margin: 17.8px 0 38.6px 0;
     padding: 15px 20px 18px 20px;
     border-radius: 4px;
     border: 1.6px solid rgba(225, 115, 52, 0.21);
     @media all and (min-width: 768px) {
       width: 325px;
       height: 86px;
-      margin: 2.8vh 0 16.31vh 0;
+      margin: 27px 0 186px 0;
       padding: 15px 20px 10px 20px;
       border-radius: 5px;
       border: 2px solid rgba(225, 115, 52, 0.21);
     }
+    @media all and (min-width: 1024px) {
+      margin-bottom: 60px;
+    }
     &__article {
       width: 60px;
       height: 48.8px;
+      text-align: center;
       @media all and (min-width: 768px) {
         width: 75px;
         height: 61px;
@@ -110,14 +106,16 @@
     font-family: $fontMain;
     font-weight: 600;
     color: $colorPrimaryBackground;
-    margin-bottom: 6.55vh;
+    margin-bottom: 30px;
     transition: background-color 0.3s ease;
     &:hover {
       background-color: $colorBrand01;
     }
-
     @media all and (min-width: 768px) {
-      margin-bottom: 6.13vh;
+      margin-bottom: 59px;
+    }
+    @media all and (min-width: 1024px) {
+      margin-bottom: 40px;
     }
   }
 }

@@ -10,6 +10,10 @@
 @import "layout/footer";
 
 body {
-  text-align: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $colorSecondaryBackground;
 }
