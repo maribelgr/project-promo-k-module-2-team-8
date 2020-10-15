@@ -66,10 +66,11 @@
       border: solid 1px $colorBrand03;
       color: $colorBrand09;
       outline-color: $colorBrand01;
+      padding: 3px 0 7px 10px;
     }
     &__inp::placeholder {
       color: $colorBrand09;
-      padding: 3px 0 7px 10px;
+      //padding: 3px 0 7px 10px;
     }
   }
 
