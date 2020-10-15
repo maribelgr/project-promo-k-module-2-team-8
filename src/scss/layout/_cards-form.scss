@@ -64,13 +64,13 @@
     &__inp {
       height: 30px;
       border: solid 1px $colorBrand03;
-      color: $colorBrand09;
+      color: $colorBrand08;
       outline-color: $colorBrand01;
-      padding: 3px 0 7px 10px;
+      font-weight: 500;
+      padding: 5px 0 5px 10px;
     }
     &__inp::placeholder {
       color: $colorBrand09;
-      //padding: 3px 0 7px 10px;
     }
   }
 
