@@ -49,7 +49,12 @@
     text-align: right;
     font-size: 18px;
     color: $colorBrand08;
+
+    &--up {
+      margin-left: 20px;
+    }
   }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -123,4 +128,10 @@
     height: 30px;
     margin-left: 20px;
   }
+}
+
+// JS classes
+
+.hidden {
+  display: none;
 }
