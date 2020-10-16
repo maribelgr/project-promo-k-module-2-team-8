@@ -35,6 +35,11 @@
   font-size: 18px;
   color: $colorBrand08;
 }
+
+.arrow-up {
+  transform: rotateZ(180deg);
+}
+
 .colors {
   display: flex;
   flex-direction: row;
