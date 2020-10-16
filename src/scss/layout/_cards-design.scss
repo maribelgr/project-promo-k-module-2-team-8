@@ -1,21 +1,21 @@
 .design {
   border: none;
   // border-bottom: 1px #d8d8d8;
+  padding: 0 20px;
 }
 
 .design__legend {
   display: grid;
   align-items: center;
-  grid-template-columns: 41px 1fr 36px;
+  grid-template-columns: 18px 1fr 18.5px;
   grid-template-rows: 1fr;
-  margin: 27px 0 31px;
+  margin: 27px 0 0px;
 }
 .design__icon {
   grid-column: 1;
   grid-row: 1;
   font-size: 18px;
   color: $colorBrand01;
-  padding-left: 20px;
 }
 .design__legend--title {
   text-align: left;
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 20px 0 39px;
+  margin: 31px 20px 0 39px;
 
   @media all and (min-width: 768px) {
     margin-left: 20px;

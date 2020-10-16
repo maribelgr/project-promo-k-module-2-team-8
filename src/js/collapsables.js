@@ -18,6 +18,8 @@ function openCollapsableDesign() {
   fillContainer.classList.add("hidden");
   shareContainer.classList.add("hidden");
   designArrow.classList.toggle("arrow-up");
+  // fillArrow.classList.remove("arrow-up");
+  // shareArrow.classList.remove("arrow-up");
 }
 
 function openCollapsableFill() {
@@ -25,6 +27,8 @@ function openCollapsableFill() {
   designContainer.classList.add("hidden");
   shareContainer.classList.add("hidden");
   fillArrow.classList.toggle("arrow-up");
+  // designArrow.classList.remove("arrow-up");
+  // shareArrow.classList.remove("arrow-up");
 }
 
 function openCollapsableShare() {
@@ -32,6 +36,8 @@ function openCollapsableShare() {
   designContainer.classList.add("hidden");
   fillContainer.classList.add("hidden");
   shareArrow.classList.toggle("arrow-up");
+  // designArrow.classList.remove("arrow-up");
+  // fillArrow.classList.remove("arrow-up");
 }
 
 designCollapsable.addEventListener("click", openCollapsableDesign);
