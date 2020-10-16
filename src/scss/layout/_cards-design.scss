@@ -36,10 +36,6 @@
   color: $colorBrand08;
 }
 
-.arrow-up {
-  transform: rotateZ(180deg);
-}
-
 .colors {
   display: flex;
   flex-direction: row;
@@ -144,4 +140,9 @@
 
 .hidden {
   display: none;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  // transform-origin: center;
 }
