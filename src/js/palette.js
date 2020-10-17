@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 "use strict";
 
 const paletteGreen = document.querySelector(".js-palette-green");
@@ -18,38 +19,36 @@ const paletteBorderLinkedin = document.querySelector(".js-border-linkedin");
 const paletteBorderGithub = document.querySelector(".js-border-github");
 
 function changeColorGreen() {
-  if (paletteGreen.value === "color-palette-1") {
-    paletteName.classList.add("dark-green");
-    // paletteName.classList.remove("dark-grey");
-    paletteJob.classList.add("green");
-    paletteBorder.classList.add("green");
-    palettePhone.classList.add("dark-green");
-    paletteEmail.classList.add("dark-green");
-    paletteLinkedin.classList.add("dark-green");
-    paletteGithub.classList.add("dark-green");
-    paletteBorderPhone.classList.add("green");
-    paletteBorderEmail.classList.add("green");
-    paletteBorderLinkedin.classList.add("green");
-    paletteBorderGithub.classList.add("green");
-  }
+
+  paletteName.classList.add("dark-green");
+  // paletteName.classList.remove("dark-grey");
+  paletteJob.classList.add("green");
+  paletteBorder.classList.add("green");
+  palettePhone.classList.add("dark-green");
+  paletteEmail.classList.add("dark-green");
+  paletteLinkedin.classList.add("dark-green");
+  paletteGithub.classList.add("dark-green");
+  paletteBorderPhone.classList.add("green");
+  paletteBorderEmail.classList.add("green");
+  paletteBorderLinkedin.classList.add("green");
+  paletteBorderGithub.classList.add("green");
 }
 
 function changeColorRed() {
-  if (paletteRed.value === "color-palette-2") {
-    paletteName.classList.add("dark-red");
-    paletteJob.classList.add("red");
-    paletteBorder.classList.add("red");
-    palettePhone.classList.add("dark-red");
-    paletteEmail.classList.add("dark-red");
-    paletteLinkedin.classList.add("dark-red");
-    paletteGithub.classList.add("dark-red");
-    paletteBorderPhone.classList.add("orange");
-    paletteBorderEmail.classList.add("orange");
-    paletteBorderLinkedin.classList.add("orange");
-    paletteBorderGithub.classList.add("orange");
-  }
+  paletteName.classList.add("dark-red");
+  paletteJob.classList.add("red");
+  paletteBorder.classList.add("red");
+  palettePhone.classList.add("dark-red");
+  paletteEmail.classList.add("dark-red");
+  paletteLinkedin.classList.add("dark-red");
+  paletteGithub.classList.add("dark-red");
+  paletteBorderPhone.classList.add("orange");
+  paletteBorderEmail.classList.add("orange");
+  paletteBorderLinkedin.classList.add("orange");
+  paletteBorderGithub.classList.add("orange");
 }
 
+/*
 function changeColorGrey() {
   if (paletteGrey.value === "color-palette-3") {
     paletteName.classList.remove("dark-red");
@@ -66,6 +65,22 @@ function changeColorGrey() {
     paletteBorderLinkedin.classList.add("grey");
     paletteBorderGithub.classList.add("grey");
   }
+}
+
+*/
+
+function changeColorGrey() {
+  paletteName.classList.add("dark-grey");
+  paletteJob.classList.add("yellow");
+  paletteBorder.classList.add("yellow");
+  palettePhone.classList.add("dark-grey");
+  paletteEmail.classList.add("dark-grey");
+  paletteLinkedin.classList.add("dark-grey");
+  paletteGithub.classList.add("dark-grey");
+  paletteBorderPhone.classList.add("grey");
+  paletteBorderEmail.classList.add("grey");
+  paletteBorderLinkedin.classList.add("grey");
+  paletteBorderGithub.classList.add("grey");
 }
 
 
