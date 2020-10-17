@@ -15,12 +15,12 @@
 // }
 
 .fill {
-  padding: 10px 20px 0 20px;
+  padding: 0px 20px 0 20px;
 
   &__container {
     display: grid;
     align-items: center;
-    grid-template-columns: 18px 1fr 20px;
+    grid-template-columns: 18px 1fr 18.5px;
     grid-template-rows: 1fr;
     padding: 10px 0 0;
   }
@@ -50,6 +50,7 @@
     font-size: 18px;
     color: $colorBrand08;
   }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -124,4 +125,10 @@
     height: 30px;
     margin-left: 20px;
   }
+}
+
+// JS classes
+
+.hidden {
+  display: none;
 }
