@@ -146,3 +146,39 @@
   transform: rotate(180deg);
   // transform-origin: center;
 }
+// palette green 1
+.dark-green {
+  color: $colorBrand05;
+}
+.green {
+  border-color: $colorBrand04;
+  color: $colorBrand04;
+}
+.green-hospital {
+  border-color: $colorBrand03;
+  color: $colorBrand03;
+}
+// palette red 2
+.dark-red {
+  color: #420101;
+}
+.red {
+  border-color: #bd1010;
+  color: #bd1010;
+}
+.orange {
+  border-color: #e95626;
+  color: #e95626;
+}
+// palette grey 3
+.dark-grey {
+  color: #3e5b65;
+}
+.yellow {
+  border-color: #eab052;
+  color: #eab052;
+}
+.grey {
+  border-color: #a0c0cf;
+  color: #a0c0cf;
+}
