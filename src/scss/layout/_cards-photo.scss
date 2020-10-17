@@ -19,6 +19,15 @@
     align-items: center;
     padding-left: 10px;
     margin-bottom: 20px;
+    outline-color: $colorBrand01;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $colorBrand01;
+      color: $colorPrimaryBackground;
+      .fa-trash-alt {
+        color: $colorPrimaryBackground;
+      }
+    }
     @media all and (min-width: 768px) {
       transform: translateY(-80px);
     }
