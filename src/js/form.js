@@ -1,6 +1,14 @@
 "use strict";
 
 const inputList = document.querySelectorAll(".js-input");
+const cardName = document.querySelector(".js-name");
+const cardJob = document.querySelector(".js-job");
+const previewImg = document.querySelector(".js__profile-preview");
+const cardImg = document.querySelector(".js__profile-image");
+const cardTel = document.querySelector(".js-tel");
+const cardEmail = document.querySelector(".js-email");
+const cardLinkedin = document.querySelector(".js-linkedin");
+const cardGithub = document.querySelector(".js-github");
 
 let data = {
   name: "Nombre Apellido",
@@ -22,19 +30,13 @@ for (const eachElement of inputList) {
 }
 
 const render = function () {
-  const cardName = document.querySelector(".js-name");
   cardName.innerHTML = data.name;
   "" === data.name && (cardName.innerHTML = "Nombre Apellido");
-  const cardJob = document.querySelector(".js-job");
   cardJob.innerHTML = data.job;
   "" === data.job && (cardJob.innerHTML = "Front-end developer");
-  const cardTel = document.querySelector(".js-tel");
   cardTel.href = data.tel;
-  const cardEmail = document.querySelector(".js-email");
   cardEmail.href = "mailto:" + data.email;
-  const cardLinkedin = document.querySelector(".js-linkedin");
   cardLinkedin.href = "https://www.linkedin.com/in/" + data.linkedin;
-  const cardGithub = document.querySelector(".js-github");
   cardGithub.href = "https://github.com/" + data.github;
 };
 
@@ -42,18 +44,20 @@ const reset = document.querySelector(".js-reset");
 
 function clickReset() {
   document.querySelector(".js-form").reset();
-  const cardName = document.querySelector(".js-name");
   cardName.innerHTML = "Nombre Apellido";
-  const cardJob = document.querySelector(".js-job");
+  data.name = "";
   cardJob.innerHTML = "Front-end developer";
-  const cardTel = document.querySelector(".js-tel");
+  data.job = "";
+  previewImg.style.backgroundImage = "";
+  cardImg.style.backgroundImage = "";
   cardTel.href = "";
-  const cardEmail = document.querySelector(".js-email");
-  cardEmail.href = "";
-  const cardLinkedin = document.querySelector(".js-linkedin");
-  cardLinkedin.href = "";
-  const cardGithub = document.querySelector(".js-github");
-  cardGithub.href = "";
+  data.tel = "";
+  cardEmail.href = "mailto:";
+  data.email = "";
+  cardLinkedin.href = "https://www.linkedin.com/in/";
+  data.linkedin = "";
+  cardGithub.href = "https://github.com";
+  data.github = "";
 }
 
 reset.addEventListener("click", clickReset);
