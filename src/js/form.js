@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-const inputList = document.querySelectorAll('.js-input');
+const inputList = document.querySelectorAll(".js-input");
 
 let data = {
-  name: 'Nombre Apellido',
-  job: '',
-  tel: '',
-  email: '',
-  linkedin: '',
-  github: '',
+  name: "Nombre Apellido",
+  job: "",
+  tel: "",
+  email: "",
+  linkedin: "",
+  github: "",
 };
 
 const saveField = function (event) {
@@ -18,22 +18,42 @@ const saveField = function (event) {
 };
 
 for (const eachElement of inputList) {
-  eachElement.addEventListener('keyup', saveField);
+  eachElement.addEventListener("keyup", saveField);
 }
 
 const render = function () {
-  const cardName = document.querySelector('.js-name');
+  const cardName = document.querySelector(".js-name");
   cardName.innerHTML = data.name;
-  '' === data.name && (cardName.innerHTML = 'Nombre Apellido');
-  const cardJob = document.querySelector('.js-job');
+  "" === data.name && (cardName.innerHTML = "Nombre Apellido");
+  const cardJob = document.querySelector(".js-job");
   cardJob.innerHTML = data.job;
-  '' === data.job && (cardJob.innerHTML = 'Front-end developer');
-  const cardTel = document.querySelector('.js-tel');
+  "" === data.job && (cardJob.innerHTML = "Front-end developer");
+  const cardTel = document.querySelector(".js-tel");
   cardTel.href = data.tel;
-  const cardEmail = document.querySelector('.js-email');
-  cardEmail.href = 'mailto:' + data.email;
-  const cardLinkedin = document.querySelector('.js-linkedin');
-  cardLinkedin.href = 'https://www.linkedin.com/in/' + data.linkedin;
-  const cardGithub = document.querySelector('.js-github');
-  cardGithub.href = 'https://github.com/' + data.github;
+  const cardEmail = document.querySelector(".js-email");
+  cardEmail.href = "mailto:" + data.email;
+  const cardLinkedin = document.querySelector(".js-linkedin");
+  cardLinkedin.href = "https://www.linkedin.com/in/" + data.linkedin;
+  const cardGithub = document.querySelector(".js-github");
+  cardGithub.href = "https://github.com/" + data.github;
 };
+
+const reset = document.querySelector(".js-reset");
+
+function clickReset() {
+  document.querySelector(".js-form").reset();
+  const cardName = document.querySelector(".js-name");
+  cardName.innerHTML = "Nombre Apellido";
+  const cardJob = document.querySelector(".js-job");
+  cardJob.innerHTML = "Front-end developer";
+  const cardTel = document.querySelector(".js-tel");
+  cardTel.href = "";
+  const cardEmail = document.querySelector(".js-email");
+  cardEmail.href = "";
+  const cardLinkedin = document.querySelector(".js-linkedin");
+  cardLinkedin.href = "";
+  const cardGithub = document.querySelector(".js-github");
+  cardGithub.href = "";
+}
+
+reset.addEventListener("click", clickReset);
