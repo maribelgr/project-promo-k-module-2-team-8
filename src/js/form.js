@@ -36,21 +36,39 @@ const saveField = function (event) {
   event.preventDefault();
   data[event.currentTarget.id] = event.currentTarget.value;
   render();
+  handleInput();
+};
+
+const handleInput = () => {
   const stringData = JSON.stringify(data);
   localStorage.setItem("userData", stringData);
   console.log(stringData);
 };
-const fromLocalStorage ()
-getFromLocalStorage();
-const stringUser = localStorage.getItem("userData");
+
+const getFromLocalStorage = () => {
+  const stringUser = localStorage.getItem("userData");
   const user = JSON.parse(stringUser);
   if (user !== null) {
+    // for (let i = 0; i < inputList.length; i++) {
+    //   inputList[i].value = user...
+    // }
+    inputList[0].value = user.name;
+    inputList[1].value = user.job;
+    inputList[2].value = user.tel;
+    inputList[3].value = user.email;
+    inputList[4].value = user.linkedin;
+    inputList[5].value = user.github;
+  }
+};
+getFromLocalStorage();
 
 for (const eachElement of inputList) {
   eachElement.addEventListener("keyup", saveField);
+  // eachElement.addEventListener("keyup", handleInput);
 }
 
 const render = function () {
+  debugger;
   cardName.innerHTML = data.name;
   "" === data.name && (cardName.innerHTML = "Nombre Apellido");
   cardJob.innerHTML = data.job;
@@ -59,6 +77,13 @@ const render = function () {
   cardEmail.href = "mailto:" + data.email;
   cardLinkedin.href = "https://www.linkedin.com/in/" + data.linkedin;
   cardGithub.href = "https://github.com/" + data.github;
+
+  // const stringData = JSON.stringify(data);
+  localStorage.setItem("userName",  data.name);
+  localStorage.getItem("userName");
+
+  // console.log(stringData);
+
 };
 
 const reset = document.querySelector(".js-reset");
