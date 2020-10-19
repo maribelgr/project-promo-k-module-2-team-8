@@ -24,7 +24,7 @@ const colorBorderLinkedin = document.querySelector(".js-border-linkedin");
 const colorBorderGithub = document.querySelector(".js-border-github");
 
 let data = {
-  name: "Nombre Apellido",
+  name: "",
   job: "",
   tel: "",
   email: "",
@@ -36,7 +36,15 @@ const saveField = function (event) {
   event.preventDefault();
   data[event.currentTarget.id] = event.currentTarget.value;
   render();
+  const stringData = JSON.stringify(data);
+  localStorage.setItem("userData", stringData);
+  console.log(stringData);
 };
+const fromLocalStorage ()
+getFromLocalStorage();
+const stringUser = localStorage.getItem("userData");
+  const user = JSON.parse(stringUser);
+  if (user !== null) {
 
 for (const eachElement of inputList) {
   eachElement.addEventListener("keyup", saveField);
@@ -73,7 +81,7 @@ function clickReset() {
   data.github = "";
 }
 
-function colorReset (event){
+function colorReset(event) {
   if (event.currentTarget.value !== "color-color-1") {
     colorName.classList.remove("dark-grey");
     colorName.classList.remove("dark-red");
@@ -100,4 +108,4 @@ function colorReset (event){
   }
 }
 reset.addEventListener("click", clickReset);
-reset.addEventListener ('click',colorReset);
+reset.addEventListener("click", colorReset);
