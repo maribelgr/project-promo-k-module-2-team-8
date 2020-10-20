@@ -24,22 +24,24 @@ const colorBorderLinkedin = document.querySelector(".js-border-linkedin");
 const colorBorderGithub = document.querySelector(".js-border-github");
 
 let data = {
+  color: "",
   name: "",
   job: "",
   tel: "",
   email: "",
   linkedin: "",
   github: "",
+  photo: "",
 };
 
 const saveField = function (event) {
   event.preventDefault();
   data[event.currentTarget.id] = event.currentTarget.value;
   render();
-  handleInput();
+  setInLocalStorage();
 };
 
-const handleInput = () => {
+const setInLocalStorage = () => {
   const stringData = JSON.stringify(data);
   localStorage.setItem("userData", stringData);
   console.log(stringData);
@@ -58,9 +60,24 @@ const getFromLocalStorage = () => {
     inputList[3].value = user.email;
     inputList[4].value = user.linkedin;
     inputList[5].value = user.github;
+    data.name = user.name;
+    data.job = user.job;
+    data.tel = user.tel;
+    data.email = user.email;
+    data.linkedin = user.linkedin;
+    data.github = user.github;
+
+    const selectedPaletteElement = document.querySelector("#color-palette-2");
+    selectedPaletteElement.click();
+
+    // const selectedPaletteElements = document.querySelectorAll(".js-palettes");
+    // selectedPaletteElement[0].value = user.palette;
+    // selectedPaletteElement[1].value = user.palette;
+    // selectedPaletteElement[2].value = user.palette;
+
+    render();
   }
 };
-getFromLocalStorage();
 
 for (const eachElement of inputList) {
   eachElement.addEventListener("keyup", saveField);
@@ -68,22 +85,21 @@ for (const eachElement of inputList) {
 }
 
 const render = function () {
-  debugger;
-  cardName.innerHTML = data.name;
-  "" === data.name && (cardName.innerHTML = "Nombre Apellido");
-  cardJob.innerHTML = data.job;
-  "" === data.job && (cardJob.innerHTML = "Front-end developer");
+  // cardName.innerHTML = data.name === "" ? "Nombre Apellido" : data.name;
+  cardName.innerHTML = data.name || "Nombre Apellido";
+  // cardName.innerHTML = data.name;
+  // "" === data.name && (cardName.innerHTML = "Nombre Apellido");
+  cardJob.innerHTML = data.job || "Front-end developer";
   cardTel.href = data.tel;
   cardEmail.href = "mailto:" + data.email;
   cardLinkedin.href = "https://www.linkedin.com/in/" + data.linkedin;
   cardGithub.href = "https://github.com/" + data.github;
 
   // const stringData = JSON.stringify(data);
-  localStorage.setItem("userName",  data.name);
-  localStorage.getItem("userName");
+  // localStorage.setItem("userName", data.name);
+  // localStorage.getItem("userName");
 
   // console.log(stringData);
-
 };
 
 const reset = document.querySelector(".js-reset");
