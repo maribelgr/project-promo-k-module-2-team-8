@@ -62,7 +62,9 @@ const getFromLocalStorage = () => {
     inputList[5].value = user.github;
     data = user;
 
-    const selectedPaletteElement = document.querySelector("#color-palette-" + data.palette);
+    const selectedPaletteElement = document.querySelector(
+      "#color-palette-" + data.palette
+    );
     selectedPaletteElement.click();
     if (data.photo !== "") {
       profileImage.style.backgroundImage = `url(${data.photo})`;
