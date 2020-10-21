@@ -9,11 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="./assets/images/favicon.jpg"
-    />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.jpg" />
     <script
       src="https://kit.fontawesome.com/9699a4c6bb.js"
       crossorigin="anonymous"
@@ -22,76 +18,71 @@
   </head>
   <body>
     <header class="cards-header" role="banner">
-      <a
-        href="index.html"
-        title="Ir a la página de inicio"
-        aria-label="Ir a la página de inicio"
-      >
-        <img src="./assets/images/logoversion2.png" alt="Logo de Frida Kards" /
-        class="cards-header__logo" aria-label="Logotipo de Frida Kards">
+      <a href="index.html">
+        <img
+          src="./assets/images/logoversion2.png"
+          alt="Logo de Frida Kards"
+          title="Ir a la página de inicio"
+          class="cards-header__logo"
+          aria-label="Logotipo de Frida Kards"
+        />
       </a>
     </header>
 
     <main class="cards-main" role="main">
       <section class="card-preview">
         <div class="card-reset">
-          <button type="reset" class="card-reset__btn" aria-label="Reset">
+          <button type="reset" class="card-reset__btn js-reset" aria-label="Reset">
             <i class="far fa-trash-alt"></i>
             Reset
           </button>
         </div>
         <div class="card">
-          <div class="card-head">
-            <h1 class="card-head__title">Nombre Apellido</h1>
-            <h2 class="card-head__subtitle">Front-end developer</h2>
+          <div class="card-head js-border">
+            <h1 class="card-head__title js-name">Nombre Apellido</h1>
+            <h2 class="card-head__subtitle js-job">Front-end developer</h2>
           </div>
-          <img
-            class="card__image"
-            src="./assets/images/Frida480x400.png"
-            alt="Fotografía de Frida Kahlo"
-            title="Frida Kahlo"
-            aria-label="Imagen de Frida Kahlo"
-          />
+          <div class="card__image js__profile-image"></div>
           <ul class="card-list">
             <li class="card-list__item">
-              <a href="#" class="card-list__link" aria-label="Teléfono">
-                <div class="card-list__icon-container">
-                  <i class="fas fa-mobile-alt card-list__icons"></i>
+              <a href="#" class="card-list__link js-tel" aria-label="Teléfono">
+                <div class="card-list__icon-container js-border-tel">
+                  <i class="fas fa-mobile-alt card-list__icons js-color-tel"></i>
                 </div>
               </a>
             </li>
             <li>
               <a
                 href="mailto: irenecorreas28@gmail.com"
-                class="card-list__link"
+                class="card-list__link js-email"
                 aria-label="Email"
               >
-                <div class="card-list__icon-container">
-                  <i class="fas fa-envelope card-list__icons"></i>
+                <div class="card-list__icon-container js-border-email">
+                  <i class="fas fa-envelope card-list__icons js-color-email"></i>
                 </div>
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com"
-                class="card-list__link"
+                class="card-list__link js-linkedin"
                 target="_blank"
                 aria-label="Linkedin"
               >
-                <div class="card-list__icon-container">
-                  <i class="fab fa-linkedin-in card-list__icons"></i>
+                <div class="card-list__icon-container js-border-linkedin">
+                  <i class="fab fa-linkedin-in card-list__icons js-color-linkedin"></i>
                 </div>
               </a>
             </li>
             <li>
               <a
                 href="https://github.com"
-                class="card-list__link"
+                class="card-list__link js-github"
                 target="_blank"
                 aria-label="Github"
               >
-                <div class="card-list__icon-container">
-                  <i class="fab fa-github-alt card-list__icons"></i>
+                <div class="card-list__icon-container js-border-github">
+                  <i class="fab fa-github-alt card-list__icons js-color-github"></i>
                 </div>
               </a>
             </li>
@@ -100,27 +91,28 @@
       </section>
 
       <section class="cards-form">
-        <form class="form-container" action="" method="POST" role="form">
+        <form class="form-container js-form" action="" method="POST" role="form">
           <!-- DISEÑA -->
           <fieldset class="design">
-            <div class="design__title">
+            <div class="design__title js-design-collapsable">
               <legend class="design__legend">
                 <i class="far fa-object-ungroup design__icon"></i>
                 <h2 class="design__legend--title">Diseña</h2>
-                <i class="fas fa-chevron-down design__arrow" aria-label="Desplegar"></i>
+                <i class="fas fa-chevron-down design__arrow js-arrow-design arrow-up" aria-label="Desplegar"></i>
               </legend>
             </div>
-            <div class="colors">
+            <div class="colors js-design">
               <h3 class="colors__title">Colores</h3>
               <div class="color__palets">
                 <div class="color-palette-1">
                 <label for="color-palette-1">
                   <input
-                    class="input1"
+                    class="input1 js-palette-green js-palettes"
                     type="radio"
                     id="color-palette-1"
                     name="color"
                     value="color-palette-1"
+                    checked
                   /></label>
                     <div class="palette1-1"></div>
                     <div class="palette1-2"></div>
@@ -129,7 +121,7 @@
               <div class="color-palette-2">
                 <label for="color-palette-2">
                   <input
-                    class="input2"
+                    class="input2 js-palette-red js-palettes"
                     type="radio"
                     id="color-palette-2"
                     name="color"
@@ -142,7 +134,7 @@
                 <div class="color-palette-3">
                 <label for="color-palette-3">
                   <input
-                    class="input3"
+                    class="input3 js-palette-grey js-palettes"
                     type="radio"
                     id="color-palette-3"
                     name="color"
@@ -159,113 +151,114 @@
           <fieldset>
             <div class="fill">
               <!-- titulo rellena -->
-              <legend class="fill__container">
+              <legend class="fill__container js-fill-collapsable">
                 <i class=" fill__icon far fa-keyboard"></i>
                 <h3 class="fill__title">Rellena</h3>
-                <i class=" fill__arrow fas fa-chevron-down" aria-label="Desplegar"></i>
+                <i class="fill__arrow fas fa-chevron-down js-arrow-fill" aria-label="Desplegar"></i>
               </legend>
               <!-- Fin titulo rellena -->
-              <div class="fill__name form">
-                <label for="name">Nombre completo</label>
-                <input class="form__inp"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Ej: Frida Kahlo"
-                  required
-                />
-              </div>
-              <div class="fill__job form">
-                <label for="job">Puesto</label>
-                <input class="form__inp"
-                  type="text"
-                  id="job"
-                  name="job"
-                  placeholder="Ej: Pintora"
-                  required
-                />
-              </div>
-              <div class="fill-container-image">
-                <div class="fill__action form">
-                  <label for="img">Imagen de perfil</label>
-                  <button class="action__upload-btn js__profile-trigger" type="button">
-                    Añadir imagen
-                  </button>
-                  <input
-                    type="file"
-                    name=""
-                    id="img-selector"
-                    class="action__hiddenField js__profile-upload-btn"
+              <div class="js-fill hidden">
+                <div class="fill__name form">
+                  <label for="name">Nombre completo</label>
+                  <input class="form__inp js-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Ej: Frida Kahlo"
+                    required
                   />
                 </div>
-                <div class="fill__profile form">
-                  <div
-                    class="js__profile-image"
-                    style="
-                      background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-                    "
-                  ></div>
-                  <div class="profile__preview js__profile-preview"></div>
+                <div class="fill__job form">
+                  <label for="job">Puesto</label>
+                  <input class="form__inp js-input"
+                    type="text"
+                    id="job"
+                    name="job"
+                    placeholder="Ej: Pintora"
+                    required
+                  />
                 </div>
-              </div>
-              <div class="fill_email form">
-                <label for="email">Email</label>
-                <input class="form__inp"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Ej: frida.Kahlo@gmail.com"
-                  required
-                />
-              </div>
-              <div class="fill_phone form">
-                <label for="tel">Teléfono</label>
-                <input class="form__inp"
-                  type="tel"
-                  id="tel"
-                  name="tel"
-                  placeholder="Ej: 698 55 43 95"
-                />
-              </div>
-              <div class="fill__linkedin form">
-                <label for="linkedin">LinkedIn</label>
-                <input class="form__inp"
-                  type="text"
-                  id="linkedin"
-                  name="linkedin"
-                  placeholder="Ej: linkedin.com/in/frida-kahlo"
-                />
-              </div>
-              <div class="fill__github form">
-                <label for="github">Github</label>
-                <input class="form__inp"
-                  type="text"
-                  id="github"
-                  name="github"
-                  placeholder="Ej: @frida-kahlo"
-                />
+                <div class="fill-container-image">
+                  <div class="fill__action form">
+                    <label for="img">Imagen de perfil</label>
+                    <button class="action__upload-btn js__profile-trigger" type="button">
+                      Añadir imagen
+                    </button>
+                    <input
+                      type="file"
+                      name=""
+                      id="img-selector"
+                      class="action__hiddenField js__profile-upload-btn"
+                    />
+                  </div>
+                    <div class="fill__profile form">
+                      <div
+                        class="js__profile-image"
+                        style="
+                          background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+                        "
+                      ></div>
+                      <div class="profile__preview js__profile-preview"></div>
+                    </div>
+                  </div>
+                <div class="fill_email form">
+                  <label for="email">Email</label>
+                  <input class="form__inp js-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ej: frida.Kahlo@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="fill_phone form">
+                  <label for="phone">Teléfono</label>
+                  <input class="form__inp js-input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Ej: 698 55 43 95"
+                  />
+                </div>
+                <div class="fill__linkedin form">
+                  <label for="linkedin">LinkedIn</label>
+                  <input class="form__inp js-input"
+                    type="text"
+                    id="linkedin"
+                    name="linkedin"
+                    placeholder="Ej: linkedin.com/in/frida-kahlo"
+                  />
+                </div>
+                <div class="fill__github form">
+                  <label for="github">Github</label>
+                  <input class="form__inp js-input"
+                    type="text"
+                    id="github"
+                    name="github"
+                    placeholder="Ej: @frida-kahlo"
+                  />
+                </div>
               </div>
             </div>
          
           <!-- COMPARTE -->
           <fieldset class="form-share">
-            <div>
+            <div class="js-share-collapsable">
               <legend class="share-legend">
-                  <!-- cambiar estilo de iconos!!!!!!!! -->
                 <i class="fas fa-share-alt share-legend__icon--share"></i>
                 <h2 class="share-legend__title">Comparte</h3>
-                <i class="fas fa-chevron-down share-legend__icon--arrow" aria-label="Desplegar"></i>
+                <i class="fas fa-chevron-down share-legend__icon--arrow js-arrow-share" aria-label="Desplegar"></i>
               </legend>
             </div>
-            <div class="create-btn">
-              <button type="button" class="create-btn__button">
+            <div class="create-btn js-share">
+              <button type="button" class="create-btn__button js-createButton">
                 <i class="far fa-address-card create-btn__icon"></i>
                 Crear tarjeta
               </button>
             </div>
             <div class="success">
               <p class="success__text">La tarjeta ha sido creada:</p>
-              <a href="" class="success__link">https://awesome-profile-card.com?id=A456DF0001</a>
+              <a href="" class="success__link js-createLink"></a>
               <a href="" title="Link para compartir en twitter" class="success__link--twitter"
                 ><i class="fab fa-twitter success__icon" aria-hidden="true" aria-label="Compartir en Twitter"></i>
                 Compartir en twitter
@@ -278,7 +271,7 @@
     </main>
 
     <footer class="footer" role="contentinfo">
-      <div class="copy2020">
+      <div class="footer__copy2020">
         <img
           src="./assets/images/logofooter.png"
           class="footer__logofrida"
@@ -301,7 +294,6 @@
       </a>
     </footer>
 
-    <script src="./assets/js/get-avatar.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
