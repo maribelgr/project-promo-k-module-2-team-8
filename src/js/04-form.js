@@ -24,10 +24,10 @@ const colorBorderLinkedin = document.querySelector(".js-border-linkedin");
 const colorBorderGithub = document.querySelector(".js-border-github");
 
 let data = {
-  color: "",
+  palette: "",
   name: "",
   job: "",
-  tel: "",
+  phone: "",
   email: "",
   linkedin: "",
   github: "",
@@ -56,20 +56,18 @@ const getFromLocalStorage = () => {
     // }
     inputList[0].value = user.name;
     inputList[1].value = user.job;
-    inputList[2].value = user.tel;
+    inputList[2].value = user.phone;
     inputList[3].value = user.email;
     inputList[4].value = user.linkedin;
     inputList[5].value = user.github;
-    data.name = user.name;
-    data.job = user.job;
-    data.tel = user.tel;
-    data.email = user.email;
-    data.linkedin = user.linkedin;
-    data.github = user.github;
+    data = user;
 
-    const selectedPaletteElement = document.querySelector("#color-palette-2");
+    const selectedPaletteElement = document.querySelector("#color-palette-" + data.palette);
     selectedPaletteElement.click();
-
+    if (data.photo !== "") {
+      profileImage.style.backgroundImage = `url(${data.photo})`;
+      profilePreview.style.backgroundImage = `url(${data.photo})`;
+    }
     // const selectedPaletteElements = document.querySelectorAll(".js-palettes");
     // selectedPaletteElement[0].value = user.palette;
     // selectedPaletteElement[1].value = user.palette;
@@ -90,7 +88,7 @@ const render = function () {
   // cardName.innerHTML = data.name;
   // "" === data.name && (cardName.innerHTML = "Nombre Apellido");
   cardJob.innerHTML = data.job || "Front-end developer";
-  cardTel.href = data.tel;
+  cardTel.href = data.phone;
   cardEmail.href = "mailto:" + data.email;
   cardLinkedin.href = "https://www.linkedin.com/in/" + data.linkedin;
   cardGithub.href = "https://github.com/" + data.github;
@@ -113,7 +111,7 @@ function clickReset() {
   previewImg.style.backgroundImage = "";
   cardImg.style.backgroundImage = "";
   cardTel.href = "";
-  data.tel = "";
+  data.phone = "";
   cardEmail.href = "mailto:";
   data.email = "";
   cardLinkedin.href = "https://www.linkedin.com/in/";

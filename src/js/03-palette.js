@@ -43,6 +43,7 @@ function changeColor(event) {
     paletteBorderLinkedin.classList.remove("grey");
     paletteBorderGithub.classList.remove("orange");
     paletteBorderGithub.classList.remove("grey");
+    data.palette = 1;
   } if (event.currentTarget.value === "color-palette-2") {
     paletteName.classList.remove("dark-green");
     paletteName.classList.remove("dark-grey");
@@ -77,6 +78,7 @@ function changeColor(event) {
     paletteBorderGithub.classList.remove("green");
     paletteBorderGithub.classList.remove("grey");
     paletteBorderGithub.classList.add("orange");
+    data.palette = 2;
   } if (event.currentTarget.value === "color-palette-3") {
     paletteName.classList.remove("dark-red");
     paletteName.classList.remove("dark-green");
@@ -111,7 +113,9 @@ function changeColor(event) {
     paletteBorderGithub.classList.remove("green");
     paletteBorderGithub.classList.remove("orange");
     paletteBorderGithub.classList.add("grey");
+    data.palette = 3;
   }
+  setInLocalStorage();
 }
 
 paletteGreen.addEventListener("change", changeColor);
