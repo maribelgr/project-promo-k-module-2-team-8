@@ -3,6 +3,7 @@
   font-size: 18px;
   border: none;
   padding: 0 20px;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .share-legend {
@@ -10,7 +11,7 @@
   align-items: center;
   grid-template-columns: 18px 1fr 18.5px;
   grid-template-rows: 1fr;
-  padding: 10px 0 31px;
+  padding: 10px 0 7px;
 
   &__icon--share {
     grid-column: 1;
@@ -43,7 +44,8 @@
 .create-btn {
   display: flex;
   justify-content: center;
-  align-items: cen;
+  align-items: center;
+  padding-top: 33px;
   border-bottom: 1px solid #d8d8d8;
 
   &__button {
@@ -72,9 +74,8 @@
 
 .success {
   padding: 20px 0 30px 0;
-  border-bottom: 1px solid #d8d8d8;
   margin-bottom: 30px;
-  // display: none;
+  text-align: center;
 
   &__text {
     font-weight: 600;

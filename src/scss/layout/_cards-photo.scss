@@ -65,6 +65,7 @@
   display: block;
   background-color: white;
   font-family: $fontUser;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
   @media all and (min-width: 768px) {
     transform: translateY(-80px);
   }

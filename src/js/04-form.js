@@ -120,6 +120,7 @@ function clickReset() {
   data.linkedin = "";
   cardGithub.href = "https://github.com";
   data.github = "";
+  localStorage.removeItem("userData");
 }
 
 function colorReset(event) {

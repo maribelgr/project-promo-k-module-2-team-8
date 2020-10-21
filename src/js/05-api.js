@@ -25,9 +25,12 @@ function sendRequest() {
     });
 }
 
+function showTwitter() {
+  shareSection.classList.remove("hidden");
+}
+
 function showURL(result) {
   if (result.success) {
-    shareSection.classList.remove("hidden");
     shareLink.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
   } else {
@@ -36,3 +39,4 @@ function showURL(result) {
 }
 
 submitButton.addEventListener("click", sendRequest);
+submitButton.addEventListener("click", showTwitter);
