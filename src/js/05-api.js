@@ -2,6 +2,7 @@
 
 //console.log(data);
 const submitButton = document.querySelector(".js-createButton");
+const twitterLink = document.querySelector(".js-linkTwitter")
 const shareLink = document.querySelector(".js-createLink");
 const shareSection = document.querySelector(".js-success");
 
@@ -20,7 +21,7 @@ function sendRequest() {
       showURL(result);
     })
     .catch(function (error) {
-      console.log(error);
+      console.log(errgit aor);
       shareLink.innerHTML = "Error en el servidor";
     });
 }
@@ -31,8 +32,8 @@ function showTwitter() {
 
 function showURL(result) {
   if (result.success) {
-    shareLink.innerHTML =
-      "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+    shareLink.href = result.cardURL;
+    shareLink.innerHTML = result.cardURL;
   } else {
     shareLink.innerHTML = "ERROR:" + result.error;
   }
@@ -40,3 +41,15 @@ function showURL(result) {
 
 submitButton.addEventListener("click", sendRequest);
 submitButton.addEventListener("click", showTwitter);
+
+ function linkTwitter(result) {
+  const twitterText =  encodeURIComponent(
+    "¡Mirad qué tarjeta tan chula he creado con Frida Kards!"
+  );
+  const hashtagsTwitter = encodeURIComponent("adalabers,promoK,frontendDevelopers");
+  const createdURL = shareLink.innerHTML;
+  twitterLink.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${createdURL}&hashtags=${hashtagsTwitter}`;
+ }
+
+ twitterLink.addEventListener("click", linkTwitter);
+
