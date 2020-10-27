@@ -15,7 +15,7 @@
 // }
 
 .fill {
-  padding: 0px 20px 0 20px;
+  margin: 0px 20px 0 20px;
   border-bottom: 1px solid #d8d8d8;
 
   &__container {
@@ -98,6 +98,7 @@
     width: 140px;
     height: 30px;
     outline-color: $colorBrand01;
+    cursor: pointer;
   }
   .action__hiddenField {
     /* Ocultamos el input de tipo "file" porque no podemos 
