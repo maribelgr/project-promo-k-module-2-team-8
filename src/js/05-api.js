@@ -6,7 +6,7 @@ const shareLink = document.querySelector(".js-createLink");
 const shareSection = document.querySelector(".js-success");
 
 function sendRequest() {
-  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/", {
+  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
