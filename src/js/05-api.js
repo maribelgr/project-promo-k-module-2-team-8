@@ -28,6 +28,8 @@ function sendRequest() {
 
 function showTwitter() {
   shareSection.classList.remove("hidden");
+  submitButton.classList.remove("create-btn__button");
+  submitButton.classList.add("create-btn__button--clicked");
 }
 
 function showURL(result) {

@@ -3,6 +3,7 @@
 
   &__btn {
     font-family: $fontMain;
+    font-weight: bold;
     width: 75px;
     height: 30px;
     border-radius: 15px;
@@ -10,7 +11,6 @@
     font-size: 12px;
     line-height: 1.67;
     color: $colorBrand08;
-    color: $colorBrand05;
     text-transform: uppercase;
     padding: 6px 12px 6px 0;
     background-color: white;
@@ -22,8 +22,11 @@
     outline-color: $colorBrand01;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+
     &:hover {
       background-color: $colorBrand01;
+      border: solid 1px $colorBrand01;
       color: $colorPrimaryBackground;
       .fa-trash-alt {
         color: $colorPrimaryBackground;
