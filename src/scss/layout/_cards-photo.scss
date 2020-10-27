@@ -1,6 +1,10 @@
 .card-reset {
   transform: translateX(-120px + 37.5px);
 
+  @media all and (min-width: 1024px) {
+    transform: translateX(-162.5px + 37.5px);
+  }
+
   &__btn {
     font-family: $fontMain;
     font-weight: bold;
@@ -73,6 +77,10 @@
   @media all and (min-width: 768px) {
     transform: translateY(-80px);
   }
+  @media all and (min-width: 1024px) {
+    width: 325px;
+    height: 400px;
+  }
 }
 
 .card-head {
@@ -101,23 +109,33 @@
   width: 240px;
   height: 200px;
   display: block;
-  background-image: url(../images/Frida480x400.png);
+  background-image: url(../images/Frida480x400gif.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   // border-top: 2px solid $colorBrand05;
   // border-bottom: 2px solid $colorBrand05;
+  @media all and (min-width: 1024px) {
+    width: 325px;
+    height: 271px;
+  }
+
 }
 
 .card-list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   // border: 1px solid red;
   align-items: center;
   padding: 12px 62px 12px 20px;
   height: 54px;
+
+  @media all and (min-width: 1024px) {
+    padding: 12px 20px 12px 20px;
+
+  }
 
   &__link {
     text-decoration: none;
