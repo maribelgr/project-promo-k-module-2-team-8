@@ -21,7 +21,7 @@ function sendRequest() {
       showURL(result);
     })
     .catch(function (error) {
-      console.log(errgit aor);
+      console.log(error);
       shareLink.innerHTML = "Error en el servidor";
     });
 }
