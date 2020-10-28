@@ -129,13 +129,8 @@
   justify-content: space-around;
   // border: 1px solid red;
   align-items: center;
-  padding: 12px 62px 12px 20px;
   height: 54px;
-
-  @media all and (min-width: 1024px) {
-    padding: 12px 20px 12px 20px;
-
-  }
+  padding: 12px 20px 12px 20px;
 
   &__link {
     text-decoration: none;
